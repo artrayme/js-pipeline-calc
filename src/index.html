@@ -1,0 +1,38 @@
+<!--//////////////////////////////////////////////////////////////////////////////////////-->
+<!--// Лабораторная работа 1 по дисциплине МРЗвИС-->
+<!--// Выполнена студентом группы 9217023-->
+<!--// БГУИР Василевский А.Д.-->
+<!--// Вариант 3 - алгоритм вычисления произведения пары 4-разрядных чисел-->
+<!--// умножением со старших разрядов со сдвигом множимого (частичного произведения) вправо;-->
+<!--// 16.05.2021-->
+<!--// Использованные материалы:-->
+<!--// https://ru.stackoverflow.com/questions/596191/ - алгоритм вычисления произведения двоичных чисел-->
+<!--// https://www.w3schools.com/js/ - методические материалы по JS-->
+<!--// https://ru.wikipedia.org/wiki/ - описание работы конвейера-->
+<!--// https://habr.com/ru/post/182002/ - реализация конвейера компьютерных процессоров-->
+<!--// http://dit.isuct.ru/IVT/BOOKS/ARCHITECTURE/arch2/GLAVA_7.HTM - описание работы процессорного конвейера-->
+<!--// http://perscom.ru/2012-01-20-09-26-05/8-konveer-komand/19-konveer-komand - описание работы процессорного конвейера-->
+<!--// https://www.studytonight.com/computer-architecture/pipelining#:~:text=An%20instruction%20pipeline%20reads%20instruction,into%20segments%20of%20equal%20duration.-->
+<!--// https://www.javatpoint.com/instruction-pipeline-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="Constants.js"></script>
+    <script src="OperationBlocks.js"></script>
+    <script src="Reader.js"></script>
+    <script src="Printer.js"></script>
+    <script src="Pipeline.js"></script>
+    <link rel="stylesheet" type="text/css">
+</head>
+<body>
+<input id="InputPairFirstElem" placeholder="Вектор А" /> <br>
+<input id="InputPairSecondElem" placeholder="Вектор В" /> <br>
+<button id="Build"  onclick='main();' >Старт</button>
+<div id="InputVector1"></div>
+<div id="InputVector2"></div>
+<div id="Answer"></div>
+<table id="Table" border = "1"> </table>
+</body>
+</html>
